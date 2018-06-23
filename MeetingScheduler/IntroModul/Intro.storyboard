@@ -101,12 +101,17 @@
                                     <action selector="registerButtonClicked:" destination="ta2-gS-FE7" eventType="touchUpInside" id="yhw-Zf-LO0"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="x2Z-y1-LaI">
+                                <rect key="frame" x="177" y="237" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="x2Z-y1-LaI" firstAttribute="centerX" secondItem="wFK-IY-FUE" secondAttribute="centerX" id="1U7-vt-5vM"/>
                             <constraint firstItem="RlJ-So-RFr" firstAttribute="top" secondItem="Ita-Qw-k7Q" secondAttribute="bottom" constant="24" id="3aK-ql-djQ"/>
                             <constraint firstItem="Ita-Qw-k7Q" firstAttribute="leading" secondItem="9aZ-xO-zuH" secondAttribute="leading" constant="16" id="B2v-7v-fjA"/>
                             <constraint firstItem="cne-9E-GKg" firstAttribute="leading" secondItem="RlJ-So-RFr" secondAttribute="leading" id="BWX-ar-5kU"/>
+                            <constraint firstItem="x2Z-y1-LaI" firstAttribute="centerY" secondItem="wFK-IY-FUE" secondAttribute="centerY" id="LCs-5t-beQ"/>
                             <constraint firstItem="cne-9E-GKg" firstAttribute="top" secondItem="RlJ-So-RFr" secondAttribute="bottom" constant="24" id="gEn-8W-J7O"/>
                             <constraint firstItem="wFK-IY-FUE" firstAttribute="top" secondItem="cne-9E-GKg" secondAttribute="bottom" constant="48" id="hIZ-wX-Zbt"/>
                             <constraint firstItem="Ita-Qw-k7Q" firstAttribute="top" secondItem="9aZ-xO-zuH" secondAttribute="top" constant="16" id="heS-yj-iXO"/>
@@ -120,8 +125,10 @@
                         <viewLayoutGuide key="safeArea" id="9aZ-xO-zuH"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="x2Z-y1-LaI" id="A8Q-lN-EKh"/>
                         <outlet property="emailTextField" destination="RlJ-So-RFr" id="vNW-DP-D16"/>
                         <outlet property="passwordTextFIeld" destination="cne-9E-GKg" id="npF-iN-8Hf"/>
+                        <outlet property="registerButton" destination="wFK-IY-FUE" id="gx4-n6-0eV"/>
                         <outlet property="usernameTextField" destination="Ita-Qw-k7Q" id="0bb-J5-wce"/>
                     </connections>
                 </viewController>
@@ -180,13 +187,18 @@
                                     <action selector="loginClicked:" destination="pPq-xM-4yT" eventType="touchUpInside" id="3YE-lV-TTq"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="CnW-kO-I1S">
+                                <rect key="frame" x="177" y="183" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="CnW-kO-I1S" firstAttribute="centerY" secondItem="VnH-Ud-JHX" secondAttribute="centerY" id="6mJ-Wl-vvf"/>
                             <constraint firstItem="NHo-RF-YeS" firstAttribute="leading" secondItem="nHb-Yi-Uur" secondAttribute="leading" id="AMU-TI-493"/>
                             <constraint firstItem="VnH-Ud-JHX" firstAttribute="leading" secondItem="n21-Rw-tlj" secondAttribute="leading" constant="36" id="HRf-R2-tHW"/>
                             <constraint firstItem="NHo-RF-YeS" firstAttribute="top" secondItem="nHb-Yi-Uur" secondAttribute="bottom" constant="24" id="N55-bn-s7v"/>
                             <constraint firstItem="NHo-RF-YeS" firstAttribute="trailing" secondItem="nHb-Yi-Uur" secondAttribute="trailing" id="YJr-tP-fF8"/>
+                            <constraint firstItem="CnW-kO-I1S" firstAttribute="centerX" secondItem="VnH-Ud-JHX" secondAttribute="centerX" id="aAA-qF-dyf"/>
                             <constraint firstItem="VnH-Ud-JHX" firstAttribute="top" secondItem="NHo-RF-YeS" secondAttribute="bottom" constant="48" id="hq3-lQ-Pej"/>
                             <constraint firstItem="n21-Rw-tlj" firstAttribute="trailing" secondItem="VnH-Ud-JHX" secondAttribute="trailing" constant="36" id="nH2-hU-ncK"/>
                             <constraint firstItem="nHb-Yi-Uur" firstAttribute="top" secondItem="n21-Rw-tlj" secondAttribute="top" constant="16" id="r3V-RL-kMO"/>
@@ -196,6 +208,7 @@
                         <viewLayoutGuide key="safeArea" id="n21-Rw-tlj"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="CnW-kO-I1S" id="Kbt-6g-8Mx"/>
                         <outlet property="emailField" destination="nHb-Yi-Uur" id="tnQ-Wv-vBc"/>
                         <outlet property="loginButton" destination="VnH-Ud-JHX" id="AGV-zO-8d4"/>
                         <outlet property="passwordField" destination="NHo-RF-YeS" id="ZVj-BK-EQH"/>
