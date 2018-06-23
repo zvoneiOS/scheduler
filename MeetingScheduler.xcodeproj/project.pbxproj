@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0427085220627C9800D49F95 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427085120627C9800D49F95 /* Day.swift */; };
+		0427085420628A0E00D49F95 /* HoursDSDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427085320628A0E00D49F95 /* HoursDSDelegate.swift */; };
+		0427085720628AF000D49F95 /* HoursCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427085520628AF000D49F95 /* HoursCVC.swift */; };
+		0427085820628AF000D49F95 /* HoursCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0427085620628AF000D49F95 /* HoursCVC.xib */; };
+		0427085A2062991300D49F95 /* AddNewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042708592062991300D49F95 /* AddNewVC.swift */; };
+		0427085D20629CF500D49F95 /* ConversionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427085C20629CF500D49F95 /* ConversionUtils.swift */; };
+		0427085F20629EE000D49F95 /* AddNewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427085E20629EE000D49F95 /* AddNewProtocols.swift */; };
+		0427086120629F7100D49F95 /* AddNewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427086020629F7100D49F95 /* AddNewPresenter.swift */; };
+		0427086320629F7D00D49F95 /* AddNewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427086220629F7D00D49F95 /* AddNewInteractor.swift */; };
+		0427086520629F9500D49F95 /* AddNewWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427086420629F9500D49F95 /* AddNewWireFrame.swift */; };
+		0461047D2063EC6600FF3279 /* MeetingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461047C2063EC6600FF3279 /* MeetingDefaults.swift */; };
+		046AFF172064FC8A00B804FF /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AFF162064FC8A00B804FF /* ShadowView.swift */; };
+		049867D42060FF9A00E32894 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049867D32060FF9A00E32894 /* LoginVC.swift */; };
+		049867D62060FFE400E32894 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049867D52060FFE400E32894 /* LoginProtocols.swift */; };
+		049867D82061015900E32894 /* LoginScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049867D72061015900E32894 /* LoginScreenPresenter.swift */; };
+		049867DA206102DB00E32894 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049867D9206102DA00E32894 /* LoginInteractor.swift */; };
+		049867DC20610A8F00E32894 /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049867DB20610A8F00E32894 /* LoginWireFrame.swift */; };
+		049867DE2061172E00E32894 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049867DD2061172E00E32894 /* Extensions.swift */; };
+		049867EA206134AD00E32894 /* MeetingSchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049867E9206134AD00E32894 /* MeetingSchedulerTests.swift */; };
+		049867F3206134D200E32894 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049867F2206134D200E32894 /* LoginTest.swift */; };
+		04986801206143C400E32894 /* DateCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049867FF206143C400E32894 /* DateCVC.swift */; };
+		04986802206143C400E32894 /* DateCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04986800206143C400E32894 /* DateCVC.xib */; };
+		04F051EC20172BA4005B7B2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F051EB20172BA4005B7B2C /* AppDelegate.swift */; };
+		04F051F120172BA4005B7B2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F051EF20172BA4005B7B2C /* Main.storyboard */; };
+		04F051F420172BA4005B7B2C /* MeetingScheduler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04F051F220172BA4005B7B2C /* MeetingScheduler.xcdatamodeld */; };
+		04F051F620172BA4005B7B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F051F520172BA4005B7B2C /* Assets.xcassets */; };
+		04F051F920172BA4005B7B2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F051F720172BA4005B7B2C /* LaunchScreen.storyboard */; };
+		04F0520220172FB6005B7B2C /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F0520120172FB6005B7B2C /* Intro.storyboard */; };
+		04F0520620173234005B7B2C /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0520520173234005B7B2C /* IntroVC.swift */; };
+		04F05209201732D5005B7B2C /* IntroScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F05208201732D5005B7B2C /* IntroScreenPresenter.swift */; };
+		04F0520C20173550005B7B2C /* IntroProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0520B20173550005B7B2C /* IntroProtocols.swift */; };
+		04F0520F20173A5D005B7B2C /* IntroWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0520E20173A5D005B7B2C /* IntroWireFrame.swift */; };
+		04F0521220176EA7005B7B2C /* IntroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0521120176EA7005B7B2C /* IntroInteractor.swift */; };
+		04F05214201772E9005B7B2C /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F05213201772E9005B7B2C /* RegisterVC.swift */; };
+		04F05216201773EF005B7B2C /* RegisterScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F05215201773EF005B7B2C /* RegisterScreenPresenter.swift */; };
+		04F0521820177404005B7B2C /* RegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0521720177404005B7B2C /* RegisterProtocols.swift */; };
+		04F0521A201775A6005B7B2C /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F05219201775A6005B7B2C /* RegisterInteractor.swift */; };
+		04F0521C20177694005B7B2C /* RegisterWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0521B20177694005B7B2C /* RegisterWireFrame.swift */; };
+		04F05222201786F1005B7B2C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F05221201786F1005B7B2C /* MainVC.swift */; };
+		04F05225201787DE005B7B2C /* MainWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F05224201787DE005B7B2C /* MainWireFrame.swift */; };
+		04F05228201787FE005B7B2C /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F05227201787FE005B7B2C /* MainProtocols.swift */; };
+		04F0522B20178941005B7B2C /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0522A20178941005B7B2C /* MainScreenPresenter.swift */; };
+		04F0522E201789B7005B7B2C /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0522D201789B7005B7B2C /* MainInteractor.swift */; };
+		CCF089AA20DE8DBD00F8416B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCF089A920DE8DBD00F8416B /* GoogleService-Info.plist */; };
+		CED8895A40A7FB41C6DF7E6C /* Pods_MeetingScheduler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F627167C047DE46EA82B1D8 /* Pods_MeetingScheduler.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		049867EC206134AD00E32894 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F051E020172BA4005B7B2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F051E720172BA4005B7B2C;
+			remoteInfo = MeetingScheduler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0427085120627C9800D49F95 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		0427085320628A0E00D49F95 /* HoursDSDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursDSDelegate.swift; sourceTree = "<group>"; };
+		0427085520628AF000D49F95 /* HoursCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursCVC.swift; sourceTree = "<group>"; };
+		0427085620628AF000D49F95 /* HoursCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HoursCVC.xib; sourceTree = "<group>"; };
+		042708592062991300D49F95 /* AddNewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewVC.swift; sourceTree = "<group>"; };
+		0427085C20629CF500D49F95 /* ConversionUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionUtils.swift; sourceTree = "<group>"; };
+		0427085E20629EE000D49F95 /* AddNewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewProtocols.swift; sourceTree = "<group>"; };
+		0427086020629F7100D49F95 /* AddNewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPresenter.swift; sourceTree = "<group>"; };
+		0427086220629F7D00D49F95 /* AddNewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewInteractor.swift; sourceTree = "<group>"; };
+		0427086420629F9500D49F95 /* AddNewWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewWireFrame.swift; sourceTree = "<group>"; };
+		0461047C2063EC6600FF3279 /* MeetingDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingDefaults.swift; sourceTree = "<group>"; };
+		046AFF162064FC8A00B804FF /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		049867D32060FF9A00E32894 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		049867D52060FFE400E32894 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		049867D72061015900E32894 /* LoginScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenPresenter.swift; sourceTree = "<group>"; };
+		049867D9206102DA00E32894 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		049867DB20610A8F00E32894 /* LoginWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireFrame.swift; sourceTree = "<group>"; };
+		049867DD2061172E00E32894 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		049867E7206134AD00E32894 /* MeetingSchedulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetingSchedulerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		049867E9206134AD00E32894 /* MeetingSchedulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingSchedulerTests.swift; sourceTree = "<group>"; };
+		049867EB206134AD00E32894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049867F2206134D200E32894 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
+		049867FF206143C400E32894 /* DateCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCVC.swift; sourceTree = "<group>"; };
+		04986800206143C400E32894 /* DateCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCVC.xib; sourceTree = "<group>"; };
+		04F051E820172BA4005B7B2C /* MeetingScheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetingScheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F051EB20172BA4005B7B2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04F051F020172BA4005B7B2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04F051F320172BA4005B7B2C /* MeetingScheduler.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeetingScheduler.xcdatamodel; sourceTree = "<group>"; };
+		04F051F520172BA4005B7B2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F051F820172BA4005B7B2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04F051FA20172BA4005B7B2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F0520120172FB6005B7B2C /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		04F0520520173234005B7B2C /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
+		04F05208201732D5005B7B2C /* IntroScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScreenPresenter.swift; sourceTree = "<group>"; };
+		04F0520B20173550005B7B2C /* IntroProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroProtocols.swift; sourceTree = "<group>"; };
+		04F0520E20173A5D005B7B2C /* IntroWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroWireFrame.swift; sourceTree = "<group>"; };
+		04F0521120176EA7005B7B2C /* IntroInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroInteractor.swift; sourceTree = "<group>"; };
+		04F05213201772E9005B7B2C /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		04F05215201773EF005B7B2C /* RegisterScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenPresenter.swift; sourceTree = "<group>"; };
+		04F0521720177404005B7B2C /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
+		04F05219201775A6005B7B2C /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		04F0521B20177694005B7B2C /* RegisterWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWireFrame.swift; sourceTree = "<group>"; };
+		04F05221201786F1005B7B2C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		04F05224201787DE005B7B2C /* MainWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireFrame.swift; sourceTree = "<group>"; };
+		04F05227201787FE005B7B2C /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
+		04F0522A20178941005B7B2C /* MainScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
+		04F0522D201789B7005B7B2C /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		0F627167C047DE46EA82B1D8 /* Pods_MeetingScheduler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeetingScheduler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12391143D4D5CFC0982A4AB9 /* Pods-MeetingScheduler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetingScheduler.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeetingScheduler/Pods-MeetingScheduler.release.xcconfig"; sourceTree = "<group>"; };
+		6D0C993376E4853F685A0102 /* Pods-MeetingScheduler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetingScheduler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeetingScheduler/Pods-MeetingScheduler.debug.xcconfig"; sourceTree = "<group>"; };
+		CCF089A920DE8DBD00F8416B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		049867E4206134AD00E32894 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F051E520172BA4005B7B2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED8895A40A7FB41C6DF7E6C /* Pods_MeetingScheduler.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0427085020627B3A00D49F95 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				0427085120627C9800D49F95 /* Day.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		0427085B20629CE000D49F95 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0427085C20629CF500D49F95 /* ConversionUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		049867E8206134AD00E32894 /* MeetingSchedulerTests */ = {
+			isa = PBXGroup;
+			children = (
+				049867F1206134C000E32894 /* Intro */,
+				049867E9206134AD00E32894 /* MeetingSchedulerTests.swift */,
+				049867EB206134AD00E32894 /* Info.plist */,
+			);
+			path = MeetingSchedulerTests;
+			sourceTree = "<group>";
+		};
+		049867F1206134C000E32894 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				049867F2206134D200E32894 /* LoginTest.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		049867FA206141BA00E32894 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				049867FF206143C400E32894 /* DateCVC.swift */,
+				04986800206143C400E32894 /* DateCVC.xib */,
+				0427085520628AF000D49F95 /* HoursCVC.swift */,
+				0427085620628AF000D49F95 /* HoursCVC.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		04C4B1D423ED3B9D5B631F94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F627167C047DE46EA82B1D8 /* Pods_MeetingScheduler.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04F051DF20172BA4005B7B2C = {
+			isa = PBXGroup;
+			children = (
+				04F051EA20172BA4005B7B2C /* MeetingScheduler */,
+				049867E8206134AD00E32894 /* MeetingSchedulerTests */,
+				04F051E920172BA4005B7B2C /* Products */,
+				2834A71EA8E2DB3591E171BA /* Pods */,
+				04C4B1D423ED3B9D5B631F94 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04F051E920172BA4005B7B2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F051E820172BA4005B7B2C /* MeetingScheduler.app */,
+				049867E7206134AD00E32894 /* MeetingSchedulerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F051EA20172BA4005B7B2C /* MeetingScheduler */ = {
+			isa = PBXGroup;
+			children = (
+				CCF089A820DE8B8700F8416B /* helpers */,
+				0427085B20629CE000D49F95 /* Utils */,
+				04F0521F201786AC005B7B2C /* MainModul */,
+				04F0520020172F95005B7B2C /* IntroModul */,
+				04F051EB20172BA4005B7B2C /* AppDelegate.swift */,
+				04F051F520172BA4005B7B2C /* Assets.xcassets */,
+				04F051F720172BA4005B7B2C /* LaunchScreen.storyboard */,
+				04F051FA20172BA4005B7B2C /* Info.plist */,
+				CCF089A920DE8DBD00F8416B /* GoogleService-Info.plist */,
+				04F051F220172BA4005B7B2C /* MeetingScheduler.xcdatamodeld */,
+			);
+			path = MeetingScheduler;
+			sourceTree = "<group>";
+		};
+		04F0520020172F95005B7B2C /* IntroModul */ = {
+			isa = PBXGroup;
+			children = (
+				04F0521020176E96005B7B2C /* interactors */,
+				04F0520A20173537005B7B2C /* protocols */,
+				04F0520720173257005B7B2C /* presenters */,
+				04F05203201731FE005B7B2C /* views */,
+				04F0520D20173A47005B7B2C /* wireframes */,
+				04F0520120172FB6005B7B2C /* Intro.storyboard */,
+			);
+			path = IntroModul;
+			sourceTree = "<group>";
+		};
+		04F05203201731FE005B7B2C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				04F0520520173234005B7B2C /* IntroVC.swift */,
+				04F05213201772E9005B7B2C /* RegisterVC.swift */,
+				049867D32060FF9A00E32894 /* LoginVC.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		04F0520720173257005B7B2C /* presenters */ = {
+			isa = PBXGroup;
+			children = (
+				04F05208201732D5005B7B2C /* IntroScreenPresenter.swift */,
+				04F05215201773EF005B7B2C /* RegisterScreenPresenter.swift */,
+				049867D72061015900E32894 /* LoginScreenPresenter.swift */,
+			);
+			path = presenters;
+			sourceTree = "<group>";
+		};
+		04F0520A20173537005B7B2C /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				04F0520B20173550005B7B2C /* IntroProtocols.swift */,
+				04F0521720177404005B7B2C /* RegisterProtocols.swift */,
+				049867D52060FFE400E32894 /* LoginProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		04F0520D20173A47005B7B2C /* wireframes */ = {
+			isa = PBXGroup;
+			children = (
+				04F0520E20173A5D005B7B2C /* IntroWireFrame.swift */,
+				04F0521B20177694005B7B2C /* RegisterWireFrame.swift */,
+				049867DB20610A8F00E32894 /* LoginWireFrame.swift */,
+			);
+			path = wireframes;
+			sourceTree = "<group>";
+		};
+		04F0521020176E96005B7B2C /* interactors */ = {
+			isa = PBXGroup;
+			children = (
+				04F0521120176EA7005B7B2C /* IntroInteractor.swift */,
+				04F05219201775A6005B7B2C /* RegisterInteractor.swift */,
+				049867D9206102DA00E32894 /* LoginInteractor.swift */,
+			);
+			path = interactors;
+			sourceTree = "<group>";
+		};
+		04F0521F201786AC005B7B2C /* MainModul */ = {
+			isa = PBXGroup;
+			children = (
+				0427085020627B3A00D49F95 /* models */,
+				04F0522C2017898D005B7B2C /* interactors */,
+				04F0522920178929005B7B2C /* presenters */,
+				04F05226201787ED005B7B2C /* protocols */,
+				04F05223201787B7005B7B2C /* wireframes */,
+				04F05220201786B9005B7B2C /* views */,
+				04F051EF20172BA4005B7B2C /* Main.storyboard */,
+				0427085320628A0E00D49F95 /* HoursDSDelegate.swift */,
+			);
+			path = MainModul;
+			sourceTree = "<group>";
+		};
+		04F05220201786B9005B7B2C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				049867FA206141BA00E32894 /* cells */,
+				04F05221201786F1005B7B2C /* MainVC.swift */,
+				042708592062991300D49F95 /* AddNewVC.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		04F05223201787B7005B7B2C /* wireframes */ = {
+			isa = PBXGroup;
+			children = (
+				04F05224201787DE005B7B2C /* MainWireFrame.swift */,
+				0427086420629F9500D49F95 /* AddNewWireFrame.swift */,
+			);
+			path = wireframes;
+			sourceTree = "<group>";
+		};
+		04F05226201787ED005B7B2C /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				04F05227201787FE005B7B2C /* MainProtocols.swift */,
+				0427085E20629EE000D49F95 /* AddNewProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		04F0522920178929005B7B2C /* presenters */ = {
+			isa = PBXGroup;
+			children = (
+				04F0522A20178941005B7B2C /* MainScreenPresenter.swift */,
+				0427086020629F7100D49F95 /* AddNewPresenter.swift */,
+			);
+			path = presenters;
+			sourceTree = "<group>";
+		};
+		04F0522C2017898D005B7B2C /* interactors */ = {
+			isa = PBXGroup;
+			children = (
+				04F0522D201789B7005B7B2C /* MainInteractor.swift */,
+				0427086220629F7D00D49F95 /* AddNewInteractor.swift */,
+			);
+			path = interactors;
+			sourceTree = "<group>";
+		};
+		2834A71EA8E2DB3591E171BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12391143D4D5CFC0982A4AB9 /* Pods-MeetingScheduler.release.xcconfig */,
+				6D0C993376E4853F685A0102 /* Pods-MeetingScheduler.debug.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CCF089A820DE8B8700F8416B /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				046AFF162064FC8A00B804FF /* ShadowView.swift */,
+				0461047C2063EC6600FF3279 /* MeetingDefaults.swift */,
+				049867DD2061172E00E32894 /* Extensions.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		049867E6206134AD00E32894 /* MeetingSchedulerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049867F0206134AD00E32894 /* Build configuration list for PBXNativeTarget "MeetingSchedulerTests" */;
+			buildPhases = (
+				049867E3206134AD00E32894 /* Sources */,
+				049867E4206134AD00E32894 /* Frameworks */,
+				049867E5206134AD00E32894 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				049867ED206134AD00E32894 /* PBXTargetDependency */,
+			);
+			name = MeetingSchedulerTests;
+			productName = MeetingSchedulerTests;
+			productReference = 049867E7206134AD00E32894 /* MeetingSchedulerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04F051E720172BA4005B7B2C /* MeetingScheduler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F051FD20172BA4005B7B2C /* Build configuration list for PBXNativeTarget "MeetingScheduler" */;
+			buildPhases = (
+				A3A2EA9894A0DC23266AFC93 /* [CP] Check Pods Manifest.lock */,
+				04F051E420172BA4005B7B2C /* Sources */,
+				04F051E520172BA4005B7B2C /* Frameworks */,
+				04F051E620172BA4005B7B2C /* Resources */,
+				EE72FAB000B3CD9DB1A5FBCE /* [CP] Embed Pods Frameworks */,
+				CDD736EC61993C8996BC488D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeetingScheduler;
+			productName = MeetingScheduler;
+			productReference = 04F051E820172BA4005B7B2C /* MeetingScheduler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04F051E020172BA4005B7B2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = cinnamon;
+				TargetAttributes = {
+					049867E6206134AD00E32894 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 04F051E720172BA4005B7B2C;
+					};
+					04F051E720172BA4005B7B2C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 04F051E320172BA4005B7B2C /* Build configuration list for PBXProject "MeetingScheduler" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04F051DF20172BA4005B7B2C;
+			productRefGroup = 04F051E920172BA4005B7B2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04F051E720172BA4005B7B2C /* MeetingScheduler */,
+				049867E6206134AD00E32894 /* MeetingSchedulerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		049867E5206134AD00E32894 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F051E620172BA4005B7B2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F051F920172BA4005B7B2C /* LaunchScreen.storyboard in Resources */,
+				04F051F620172BA4005B7B2C /* Assets.xcassets in Resources */,
+				0427085820628AF000D49F95 /* HoursCVC.xib in Resources */,
+				04F051F120172BA4005B7B2C /* Main.storyboard in Resources */,
+				04F0520220172FB6005B7B2C /* Intro.storyboard in Resources */,
+				04986802206143C400E32894 /* DateCVC.xib in Resources */,
+				CCF089AA20DE8DBD00F8416B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A3A2EA9894A0DC23266AFC93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeetingScheduler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDD736EC61993C8996BC488D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeetingScheduler/Pods-MeetingScheduler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE72FAB000B3CD9DB1A5FBCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MeetingScheduler/Pods-MeetingScheduler-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeetingScheduler/Pods-MeetingScheduler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		049867E3206134AD00E32894 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049867EA206134AD00E32894 /* MeetingSchedulerTests.swift in Sources */,
+				049867F3206134D200E32894 /* LoginTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F051E420172BA4005B7B2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049867DE2061172E00E32894 /* Extensions.swift in Sources */,
+				0427085A2062991300D49F95 /* AddNewVC.swift in Sources */,
+				04F0520C20173550005B7B2C /* IntroProtocols.swift in Sources */,
+				04F0522B20178941005B7B2C /* MainScreenPresenter.swift in Sources */,
+				049867DA206102DB00E32894 /* LoginInteractor.swift in Sources */,
+				049867D82061015900E32894 /* LoginScreenPresenter.swift in Sources */,
+				0427086520629F9500D49F95 /* AddNewWireFrame.swift in Sources */,
+				04F0521820177404005B7B2C /* RegisterProtocols.swift in Sources */,
+				04F0521A201775A6005B7B2C /* RegisterInteractor.swift in Sources */,
+				04F0520620173234005B7B2C /* IntroVC.swift in Sources */,
+				049867D62060FFE400E32894 /* LoginProtocols.swift in Sources */,
+				0427085F20629EE000D49F95 /* AddNewProtocols.swift in Sources */,
+				04F0520F20173A5D005B7B2C /* IntroWireFrame.swift in Sources */,
+				04F051EC20172BA4005B7B2C /* AppDelegate.swift in Sources */,
+				04F05216201773EF005B7B2C /* RegisterScreenPresenter.swift in Sources */,
+				04F05209201732D5005B7B2C /* IntroScreenPresenter.swift in Sources */,
+				0427086120629F7100D49F95 /* AddNewPresenter.swift in Sources */,
+				04F05228201787FE005B7B2C /* MainProtocols.swift in Sources */,
+				04F05214201772E9005B7B2C /* RegisterVC.swift in Sources */,
+				04986801206143C400E32894 /* DateCVC.swift in Sources */,
+				04F05225201787DE005B7B2C /* MainWireFrame.swift in Sources */,
+				0427085D20629CF500D49F95 /* ConversionUtils.swift in Sources */,
+				04F051F420172BA4005B7B2C /* MeetingScheduler.xcdatamodeld in Sources */,
+				0461047D2063EC6600FF3279 /* MeetingDefaults.swift in Sources */,
+				0427085220627C9800D49F95 /* Day.swift in Sources */,
+				049867DC20610A8F00E32894 /* LoginWireFrame.swift in Sources */,
+				04F0521C20177694005B7B2C /* RegisterWireFrame.swift in Sources */,
+				049867D42060FF9A00E32894 /* LoginVC.swift in Sources */,
+				0427085720628AF000D49F95 /* HoursCVC.swift in Sources */,
+				04F0521220176EA7005B7B2C /* IntroInteractor.swift in Sources */,
+				0427085420628A0E00D49F95 /* HoursDSDelegate.swift in Sources */,
+				04F0522E201789B7005B7B2C /* MainInteractor.swift in Sources */,
+				04F05222201786F1005B7B2C /* MainVC.swift in Sources */,
+				0427086320629F7D00D49F95 /* AddNewInteractor.swift in Sources */,
+				046AFF172064FC8A00B804FF /* ShadowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		049867ED206134AD00E32894 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F051E720172BA4005B7B2C /* MeetingScheduler */;
+			targetProxy = 049867EC206134AD00E32894 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04F051EF20172BA4005B7B2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F051F020172BA4005B7B2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04F051F720172BA4005B7B2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F051F820172BA4005B7B2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		049867EE206134AD00E32894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QQ2HF368NY;
+				INFOPLIST_FILE = MeetingSchedulerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = agency.MeetingSchedulerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeetingScheduler.app/MeetingScheduler";
+			};
+			name = Debug;
+		};
+		049867EF206134AD00E32894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QQ2HF368NY;
+				INFOPLIST_FILE = MeetingSchedulerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = agency.MeetingSchedulerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeetingScheduler.app/MeetingScheduler";
+			};
+			name = Release;
+		};
+		04F051FB20172BA4005B7B2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04F051FC20172BA4005B7B2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04F051FE20172BA4005B7B2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D0C993376E4853F685A0102 /* Pods-MeetingScheduler.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H2U9MQGPL9;
+				INFOPLIST_FILE = MeetingScheduler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zvoneiOS.MeetingScheduler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04F051FF20172BA4005B7B2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12391143D4D5CFC0982A4AB9 /* Pods-MeetingScheduler.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H2U9MQGPL9;
+				INFOPLIST_FILE = MeetingScheduler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zvoneiOS.MeetingScheduler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		049867F0206134AD00E32894 /* Build configuration list for PBXNativeTarget "MeetingSchedulerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049867EE206134AD00E32894 /* Debug */,
+				049867EF206134AD00E32894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F051E320172BA4005B7B2C /* Build configuration list for PBXProject "MeetingScheduler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F051FB20172BA4005B7B2C /* Debug */,
+				04F051FC20172BA4005B7B2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F051FD20172BA4005B7B2C /* Build configuration list for PBXNativeTarget "MeetingScheduler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F051FE20172BA4005B7B2C /* Debug */,
+				04F051FF20172BA4005B7B2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04F051F220172BA4005B7B2C /* MeetingScheduler.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04F051F320172BA4005B7B2C /* MeetingScheduler.xcdatamodel */,
+			);
+			currentVersion = 04F051F320172BA4005B7B2C /* MeetingScheduler.xcdatamodel */;
+			path = MeetingScheduler.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04F051E020172BA4005B7B2C /* Project object */;
+}
